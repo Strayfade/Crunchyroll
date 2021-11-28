@@ -8,15 +8,18 @@ using System.Windows.Forms;
 
 using HtmlAgilityPack;
 using System.Windows;
+using Microsoft.Web.WebView2;
+using Microsoft.Web.WebView2.Core;
 
-namespace NeuronWebdriver
+namespace Crunchyroll
 {
     public partial class Crunchyform : Form
     {
         public Crunchyform()
         {
             InitializeComponent();
-            InitializeChromium();
+
+            GenrePanel.Visible = false;
 
             Initialize();
         }
@@ -38,11 +41,6 @@ namespace NeuronWebdriver
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
-
-        private void InitializeChromium()
-        {
-
-        }
         private static Assembly Resolver(object sender, ResolveEventArgs args)
         {
             if (args.Name.StartsWith("CefSharp"))
@@ -58,17 +56,28 @@ namespace NeuronWebdriver
 
         public void Initialize()
         {
-            Electron.Source = new Uri("https://www.crunchyroll.com/trybeta");
-            Electron.NavigationCompleted += Electron_NavigationCompleted;
             UpdateLayoutWidth();
+
+            //CoreWebView2Settings G;
+            //G.IsPasswordAutosaveEnabled = true;
+            //G.IsBuiltInErrorPageEnabled = false;
+            //G.UserAgent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34";
+            //G.AreDevToolsEnabled = false;
+            //G.AreDefaultContextMenusEnabled = false;
+            //G.AreDefaultScriptDialogsEnabled = false;
+            //G.AreBrowserAcceleratorKeysEnabled = false;
+
+            Electron.NavigationCompleted += Electron_NavigationStarting; ;
+            Electron.EnsureCoreWebView2Async();
+            Electron.Source = new Uri("https://www.crunchyroll.com/trybeta");
         }
 
-        bool Betatest = true;
-        private void Electron_NavigationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs e)
+        bool Betatest = false;
+        private void Electron_NavigationStarting(object sender, CoreWebView2NavigationCompletedEventArgs e)
         {
             if (Betatest)
             {
-                if (Electron.Source.ToString().Contains("beta") || Electron.Source.ToString().Contains("watch"))
+                if (Electron.Source.ToString().Contains("beta") || Electron.CoreWebView2.Source.ToString().Contains("watch"))
                 {
                     RightPanel.Invoke(new MethodInvoker(delegate { RightPanel.Visible = true; }));
                     FullscreenButton.Invoke(new MethodInvoker(delegate { FullscreenButton.Visible = true; }));
@@ -144,12 +153,17 @@ namespace NeuronWebdriver
         private void FullscreenButton_Click(object sender, EventArgs e)
         {
             Fullscreen = !Fullscreen;
+            FullscreenUpdate();
+        }
+
+        private void FullscreenUpdate()
+        {
             if (Fullscreen)
             {
                 WindowLocation = Location;
                 WindowSize = Size;
 
-                FullscreenButton.Text = "\uE73F";
+                FullscreenButton.Visible = false;
                 RightPanel.Visible = false;
                 TitlebarPanel.Visible = false;
                 UpdateLayoutWidth();
@@ -159,7 +173,7 @@ namespace NeuronWebdriver
             }
             else
             {
-                FullscreenButton.Text = "\uE740";
+                FullscreenButton.Visible = true;
                 RightPanel.Visible = true;
                 TitlebarPanel.Visible = true;
                 UpdateLayoutWidth();
@@ -187,6 +201,76 @@ namespace NeuronWebdriver
         private void BackButton_Click(object sender, EventArgs e)
         {
             Electron.GoBack();
+        }
+
+        private void Crunchyform_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
+                if (Fullscreen)
+                {
+                    Fullscreen = false;
+                    FullscreenUpdate();
+                }
+            }
+        }
+
+        private void Electron_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
+                if (Fullscreen)
+                {
+                    Fullscreen = false;
+                    FullscreenUpdate();
+                }
+            }
+        }
+
+        private void FullscreenButton_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Escape)
+            {
+                if (Fullscreen)
+                {
+                    Fullscreen = false;
+                    FullscreenUpdate();
+                }
+            }
+        }
+
+        private void siticoneButton1_Click(object sender, EventArgs e)
+        {
+            Electron.Source = new Uri("https://beta.crunchyroll.com/videos/" + ((Siticone.UI.WinForms.SiticoneButton)sender).Text.ToString().ToLower());
+            GenrePanel.Visible = false;
+        }
+
+        private void siticoneButton3_Click(object sender, EventArgs e)
+        {
+            Electron.Source = new Uri("https://www.crunchyroll.com/originals/en/index.html");
+            GenrePanel.Visible = false;
+        }
+
+        private void siticoneButton5_Click(object sender, EventArgs e)
+        {
+            Electron.Source = new Uri("https://www.crunchyroll.com/simulcastcalendar");
+            GenrePanel.Visible = false;
+        }
+
+        private void siticoneButton19_Click(object sender, EventArgs e)
+        {
+            Electron.Source = new Uri("https://beta.crunchyroll.com/videos/slice-of-life");
+            GenrePanel.Visible = false;
+        }
+
+        private void siticoneButton22_Click(object sender, EventArgs e)
+        {
+            GenrePanel.Visible = false;
+        }
+
+        private void siticoneButton21_Click(object sender, EventArgs e)
+        {
+            GenrePanel.Visible = !GenrePanel.Visible;
         }
     }
 }

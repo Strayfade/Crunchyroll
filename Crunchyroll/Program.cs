@@ -1,7 +1,7 @@
 ﻿
 using System;
 using System.Windows.Forms;
-namespace NeuronWebdriver
+namespace Crunchyroll
 {
     static class Program
     {
