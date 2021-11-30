@@ -32,7 +32,6 @@ namespace Crunchyroll
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Crunchyform));
             this.siticoneGradientPanel1 = new Siticone.UI.WinForms.SiticoneGradientPanel();
             this.GenrePanel = new System.Windows.Forms.Panel();
-            this.siticoneButton22 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneLabel3 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneLabel2 = new Siticone.UI.WinForms.SiticoneLabel();
             this.siticoneButton16 = new Siticone.UI.WinForms.SiticoneButton();
@@ -55,6 +54,7 @@ namespace Crunchyroll
             this.siticoneButton3 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton2 = new Siticone.UI.WinForms.SiticoneButton();
             this.siticoneButton1 = new Siticone.UI.WinForms.SiticoneButton();
+            this.siticoneButton22 = new Siticone.UI.WinForms.SiticoneButton();
             this.TitlebarPanel = new System.Windows.Forms.Panel();
             this.BackButton = new Siticone.UI.WinForms.SiticoneButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -91,7 +91,7 @@ namespace Crunchyroll
             this.siticoneGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.siticoneGradientPanel1.Name = "siticoneGradientPanel1";
             this.siticoneGradientPanel1.ShadowDecoration.Parent = this.siticoneGradientPanel1;
-            this.siticoneGradientPanel1.Size = new System.Drawing.Size(1161, 561);
+            this.siticoneGradientPanel1.Size = new System.Drawing.Size(1147, 689);
             this.siticoneGradientPanel1.TabIndex = 1;
             // 
             // GenrePanel
@@ -123,28 +123,10 @@ namespace Crunchyroll
             this.GenrePanel.Controls.Add(this.siticoneButton2);
             this.GenrePanel.Controls.Add(this.siticoneButton1);
             this.GenrePanel.Controls.Add(this.siticoneButton22);
-            this.GenrePanel.Location = new System.Drawing.Point(64, 285);
+            this.GenrePanel.Location = new System.Drawing.Point(64, 413);
             this.GenrePanel.Name = "GenrePanel";
-            this.GenrePanel.Size = new System.Drawing.Size(980, 280);
+            this.GenrePanel.Size = new System.Drawing.Size(966, 280);
             this.GenrePanel.TabIndex = 5;
-            // 
-            // siticoneButton22
-            // 
-            this.siticoneButton22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneButton22.CheckedState.Parent = this.siticoneButton22;
-            this.siticoneButton22.CustomImages.Parent = this.siticoneButton22;
-            this.siticoneButton22.FillColor = System.Drawing.Color.Black;
-            this.siticoneButton22.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneButton22.ForeColor = System.Drawing.Color.Gray;
-            this.siticoneButton22.HoveredState.Parent = this.siticoneButton22;
-            this.siticoneButton22.Location = new System.Drawing.Point(933, 3);
-            this.siticoneButton22.Name = "siticoneButton22";
-            this.siticoneButton22.ShadowDecoration.Parent = this.siticoneButton22;
-            this.siticoneButton22.Size = new System.Drawing.Size(42, 38);
-            this.siticoneButton22.TabIndex = 4;
-            this.siticoneButton22.Text = "";
-            this.TooltipManager.SetToolTip(this.siticoneButton22, "Close");
-            this.siticoneButton22.Click += new System.EventHandler(this.siticoneButton22_Click);
             // 
             // siticoneLabel3
             // 
@@ -153,7 +135,7 @@ namespace Crunchyroll
             this.siticoneLabel3.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel3.ForeColor = System.Drawing.Color.Gray;
-            this.siticoneLabel3.Location = new System.Drawing.Point(38, 26);
+            this.siticoneLabel3.Location = new System.Drawing.Point(31, 26);
             this.siticoneLabel3.Name = "siticoneLabel3";
             this.siticoneLabel3.Size = new System.Drawing.Size(90, 17);
             this.siticoneLabel3.TabIndex = 23;
@@ -166,7 +148,7 @@ namespace Crunchyroll
             this.siticoneLabel2.BackColor = System.Drawing.Color.Transparent;
             this.siticoneLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneLabel2.ForeColor = System.Drawing.Color.Gray;
-            this.siticoneLabel2.Location = new System.Drawing.Point(388, 26);
+            this.siticoneLabel2.Location = new System.Drawing.Point(381, 26);
             this.siticoneLabel2.Name = "siticoneLabel2";
             this.siticoneLabel2.Size = new System.Drawing.Size(90, 17);
             this.siticoneLabel2.TabIndex = 22;
@@ -184,14 +166,13 @@ namespace Crunchyroll
             this.siticoneButton16.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton16.ForeColor = System.Drawing.Color.White;
             this.siticoneButton16.HoveredState.Parent = this.siticoneButton16;
-            this.siticoneButton16.Location = new System.Drawing.Point(788, 223);
+            this.siticoneButton16.Location = new System.Drawing.Point(781, 223);
             this.siticoneButton16.Name = "siticoneButton16";
             this.siticoneButton16.ShadowDecoration.Parent = this.siticoneButton16;
             this.siticoneButton16.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton16.TabIndex = 21;
             this.siticoneButton16.Text = "Thriller";
             this.siticoneButton16.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton16, "Search");
             this.siticoneButton16.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton17
@@ -206,14 +187,13 @@ namespace Crunchyroll
             this.siticoneButton17.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton17.ForeColor = System.Drawing.Color.White;
             this.siticoneButton17.HoveredState.Parent = this.siticoneButton17;
-            this.siticoneButton17.Location = new System.Drawing.Point(788, 181);
+            this.siticoneButton17.Location = new System.Drawing.Point(781, 181);
             this.siticoneButton17.Name = "siticoneButton17";
             this.siticoneButton17.ShadowDecoration.Parent = this.siticoneButton17;
             this.siticoneButton17.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton17.TabIndex = 20;
             this.siticoneButton17.Text = "Supernatural";
             this.siticoneButton17.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton17, "Search");
             this.siticoneButton17.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton18
@@ -228,14 +208,13 @@ namespace Crunchyroll
             this.siticoneButton18.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton18.ForeColor = System.Drawing.Color.White;
             this.siticoneButton18.HoveredState.Parent = this.siticoneButton18;
-            this.siticoneButton18.Location = new System.Drawing.Point(788, 139);
+            this.siticoneButton18.Location = new System.Drawing.Point(781, 139);
             this.siticoneButton18.Name = "siticoneButton18";
             this.siticoneButton18.ShadowDecoration.Parent = this.siticoneButton18;
             this.siticoneButton18.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton18.TabIndex = 19;
             this.siticoneButton18.Text = "Sports";
             this.siticoneButton18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton18, "Search");
             this.siticoneButton18.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton19
@@ -250,14 +229,13 @@ namespace Crunchyroll
             this.siticoneButton19.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton19.ForeColor = System.Drawing.Color.White;
             this.siticoneButton19.HoveredState.Parent = this.siticoneButton19;
-            this.siticoneButton19.Location = new System.Drawing.Point(788, 96);
+            this.siticoneButton19.Location = new System.Drawing.Point(781, 96);
             this.siticoneButton19.Name = "siticoneButton19";
             this.siticoneButton19.ShadowDecoration.Parent = this.siticoneButton19;
             this.siticoneButton19.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton19.TabIndex = 18;
             this.siticoneButton19.Text = "Slice of Life";
             this.siticoneButton19.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton19, "Search");
             this.siticoneButton19.Click += new System.EventHandler(this.siticoneButton19_Click);
             // 
             // siticoneButton20
@@ -272,14 +250,13 @@ namespace Crunchyroll
             this.siticoneButton20.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton20.ForeColor = System.Drawing.Color.White;
             this.siticoneButton20.HoveredState.Parent = this.siticoneButton20;
-            this.siticoneButton20.Location = new System.Drawing.Point(788, 54);
+            this.siticoneButton20.Location = new System.Drawing.Point(781, 54);
             this.siticoneButton20.Name = "siticoneButton20";
             this.siticoneButton20.ShadowDecoration.Parent = this.siticoneButton20;
             this.siticoneButton20.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton20.TabIndex = 17;
             this.siticoneButton20.Text = "Shonen";
             this.siticoneButton20.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton20, "Search");
             this.siticoneButton20.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton11
@@ -294,14 +271,13 @@ namespace Crunchyroll
             this.siticoneButton11.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton11.ForeColor = System.Drawing.Color.White;
             this.siticoneButton11.HoveredState.Parent = this.siticoneButton11;
-            this.siticoneButton11.Location = new System.Drawing.Point(590, 223);
+            this.siticoneButton11.Location = new System.Drawing.Point(583, 223);
             this.siticoneButton11.Name = "siticoneButton11";
             this.siticoneButton11.ShadowDecoration.Parent = this.siticoneButton11;
             this.siticoneButton11.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton11.TabIndex = 16;
             this.siticoneButton11.Text = "Shojo";
             this.siticoneButton11.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton11, "Search");
             this.siticoneButton11.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton12
@@ -316,14 +292,13 @@ namespace Crunchyroll
             this.siticoneButton12.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton12.ForeColor = System.Drawing.Color.White;
             this.siticoneButton12.HoveredState.Parent = this.siticoneButton12;
-            this.siticoneButton12.Location = new System.Drawing.Point(590, 181);
+            this.siticoneButton12.Location = new System.Drawing.Point(583, 181);
             this.siticoneButton12.Name = "siticoneButton12";
             this.siticoneButton12.ShadowDecoration.Parent = this.siticoneButton12;
             this.siticoneButton12.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton12.TabIndex = 15;
             this.siticoneButton12.Text = "Seinen";
             this.siticoneButton12.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton12, "Search");
             this.siticoneButton12.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton13
@@ -338,14 +313,13 @@ namespace Crunchyroll
             this.siticoneButton13.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton13.ForeColor = System.Drawing.Color.White;
             this.siticoneButton13.HoveredState.Parent = this.siticoneButton13;
-            this.siticoneButton13.Location = new System.Drawing.Point(590, 139);
+            this.siticoneButton13.Location = new System.Drawing.Point(583, 139);
             this.siticoneButton13.Name = "siticoneButton13";
             this.siticoneButton13.ShadowDecoration.Parent = this.siticoneButton13;
             this.siticoneButton13.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton13.TabIndex = 14;
             this.siticoneButton13.Text = "Sci-fi";
             this.siticoneButton13.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton13, "Search");
             this.siticoneButton13.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton14
@@ -360,14 +334,13 @@ namespace Crunchyroll
             this.siticoneButton14.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton14.ForeColor = System.Drawing.Color.White;
             this.siticoneButton14.HoveredState.Parent = this.siticoneButton14;
-            this.siticoneButton14.Location = new System.Drawing.Point(590, 96);
+            this.siticoneButton14.Location = new System.Drawing.Point(583, 96);
             this.siticoneButton14.Name = "siticoneButton14";
             this.siticoneButton14.ShadowDecoration.Parent = this.siticoneButton14;
             this.siticoneButton14.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton14.TabIndex = 13;
             this.siticoneButton14.Text = "Romance";
             this.siticoneButton14.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton14, "Search");
             this.siticoneButton14.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton15
@@ -382,14 +355,13 @@ namespace Crunchyroll
             this.siticoneButton15.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton15.ForeColor = System.Drawing.Color.White;
             this.siticoneButton15.HoveredState.Parent = this.siticoneButton15;
-            this.siticoneButton15.Location = new System.Drawing.Point(590, 54);
+            this.siticoneButton15.Location = new System.Drawing.Point(583, 54);
             this.siticoneButton15.Name = "siticoneButton15";
             this.siticoneButton15.ShadowDecoration.Parent = this.siticoneButton15;
             this.siticoneButton15.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton15.TabIndex = 12;
             this.siticoneButton15.Text = "Music";
             this.siticoneButton15.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton15, "Search");
             this.siticoneButton15.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton6
@@ -404,14 +376,13 @@ namespace Crunchyroll
             this.siticoneButton6.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton6.ForeColor = System.Drawing.Color.White;
             this.siticoneButton6.HoveredState.Parent = this.siticoneButton6;
-            this.siticoneButton6.Location = new System.Drawing.Point(388, 223);
+            this.siticoneButton6.Location = new System.Drawing.Point(381, 223);
             this.siticoneButton6.Name = "siticoneButton6";
             this.siticoneButton6.ShadowDecoration.Parent = this.siticoneButton6;
             this.siticoneButton6.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton6.TabIndex = 11;
             this.siticoneButton6.Text = "Fantasy";
             this.siticoneButton6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton6, "Search");
             this.siticoneButton6.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton7
@@ -426,14 +397,13 @@ namespace Crunchyroll
             this.siticoneButton7.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton7.ForeColor = System.Drawing.Color.White;
             this.siticoneButton7.HoveredState.Parent = this.siticoneButton7;
-            this.siticoneButton7.Location = new System.Drawing.Point(388, 181);
+            this.siticoneButton7.Location = new System.Drawing.Point(381, 181);
             this.siticoneButton7.Name = "siticoneButton7";
             this.siticoneButton7.ShadowDecoration.Parent = this.siticoneButton7;
             this.siticoneButton7.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton7.TabIndex = 10;
             this.siticoneButton7.Text = "Drama";
             this.siticoneButton7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton7, "Search");
             this.siticoneButton7.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton8
@@ -448,14 +418,13 @@ namespace Crunchyroll
             this.siticoneButton8.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton8.ForeColor = System.Drawing.Color.White;
             this.siticoneButton8.HoveredState.Parent = this.siticoneButton8;
-            this.siticoneButton8.Location = new System.Drawing.Point(388, 139);
+            this.siticoneButton8.Location = new System.Drawing.Point(381, 139);
             this.siticoneButton8.Name = "siticoneButton8";
             this.siticoneButton8.ShadowDecoration.Parent = this.siticoneButton8;
             this.siticoneButton8.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton8.TabIndex = 9;
             this.siticoneButton8.Text = "Comedy";
             this.siticoneButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton8, "Search");
             this.siticoneButton8.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton9
@@ -470,14 +439,13 @@ namespace Crunchyroll
             this.siticoneButton9.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton9.ForeColor = System.Drawing.Color.White;
             this.siticoneButton9.HoveredState.Parent = this.siticoneButton9;
-            this.siticoneButton9.Location = new System.Drawing.Point(388, 96);
+            this.siticoneButton9.Location = new System.Drawing.Point(381, 96);
             this.siticoneButton9.Name = "siticoneButton9";
             this.siticoneButton9.ShadowDecoration.Parent = this.siticoneButton9;
             this.siticoneButton9.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton9.TabIndex = 8;
             this.siticoneButton9.Text = "Adventure";
             this.siticoneButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton9, "Search");
             this.siticoneButton9.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton10
@@ -492,14 +460,13 @@ namespace Crunchyroll
             this.siticoneButton10.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton10.ForeColor = System.Drawing.Color.White;
             this.siticoneButton10.HoveredState.Parent = this.siticoneButton10;
-            this.siticoneButton10.Location = new System.Drawing.Point(388, 54);
+            this.siticoneButton10.Location = new System.Drawing.Point(381, 54);
             this.siticoneButton10.Name = "siticoneButton10";
             this.siticoneButton10.ShadowDecoration.Parent = this.siticoneButton10;
             this.siticoneButton10.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton10.TabIndex = 7;
             this.siticoneButton10.Text = "Action";
             this.siticoneButton10.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton10, "Search");
             this.siticoneButton10.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton5
@@ -514,14 +481,13 @@ namespace Crunchyroll
             this.siticoneButton5.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton5.ForeColor = System.Drawing.Color.White;
             this.siticoneButton5.HoveredState.Parent = this.siticoneButton5;
-            this.siticoneButton5.Location = new System.Drawing.Point(38, 223);
+            this.siticoneButton5.Location = new System.Drawing.Point(31, 223);
             this.siticoneButton5.Name = "siticoneButton5";
             this.siticoneButton5.ShadowDecoration.Parent = this.siticoneButton5;
             this.siticoneButton5.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton5.TabIndex = 6;
             this.siticoneButton5.Text = "Release Calendar";
             this.siticoneButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton5, "Search");
             this.siticoneButton5.Click += new System.EventHandler(this.siticoneButton5_Click);
             // 
             // siticoneButton4
@@ -536,14 +502,13 @@ namespace Crunchyroll
             this.siticoneButton4.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton4.ForeColor = System.Drawing.Color.White;
             this.siticoneButton4.HoveredState.Parent = this.siticoneButton4;
-            this.siticoneButton4.Location = new System.Drawing.Point(38, 181);
+            this.siticoneButton4.Location = new System.Drawing.Point(31, 181);
             this.siticoneButton4.Name = "siticoneButton4";
             this.siticoneButton4.ShadowDecoration.Parent = this.siticoneButton4;
             this.siticoneButton4.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton4.TabIndex = 5;
             this.siticoneButton4.Text = "Originals";
             this.siticoneButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton4, "Search");
             this.siticoneButton4.Click += new System.EventHandler(this.siticoneButton3_Click);
             // 
             // siticoneButton3
@@ -558,14 +523,13 @@ namespace Crunchyroll
             this.siticoneButton3.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton3.ForeColor = System.Drawing.Color.White;
             this.siticoneButton3.HoveredState.Parent = this.siticoneButton3;
-            this.siticoneButton3.Location = new System.Drawing.Point(38, 139);
+            this.siticoneButton3.Location = new System.Drawing.Point(31, 139);
             this.siticoneButton3.Name = "siticoneButton3";
             this.siticoneButton3.ShadowDecoration.Parent = this.siticoneButton3;
             this.siticoneButton3.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton3.TabIndex = 4;
             this.siticoneButton3.Text = "Alphabetical";
             this.siticoneButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton3, "Search");
             this.siticoneButton3.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton2
@@ -580,14 +544,13 @@ namespace Crunchyroll
             this.siticoneButton2.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton2.ForeColor = System.Drawing.Color.White;
             this.siticoneButton2.HoveredState.Parent = this.siticoneButton2;
-            this.siticoneButton2.Location = new System.Drawing.Point(38, 96);
+            this.siticoneButton2.Location = new System.Drawing.Point(31, 96);
             this.siticoneButton2.Name = "siticoneButton2";
             this.siticoneButton2.ShadowDecoration.Parent = this.siticoneButton2;
             this.siticoneButton2.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton2.TabIndex = 3;
             this.siticoneButton2.Text = "New";
             this.siticoneButton2.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton2, "Search");
             this.siticoneButton2.Click += new System.EventHandler(this.siticoneButton1_Click);
             // 
             // siticoneButton1
@@ -602,15 +565,32 @@ namespace Crunchyroll
             this.siticoneButton1.Font = new System.Drawing.Font("Segoe UI", 9.25F);
             this.siticoneButton1.ForeColor = System.Drawing.Color.White;
             this.siticoneButton1.HoveredState.Parent = this.siticoneButton1;
-            this.siticoneButton1.Location = new System.Drawing.Point(38, 54);
+            this.siticoneButton1.Location = new System.Drawing.Point(31, 54);
             this.siticoneButton1.Name = "siticoneButton1";
             this.siticoneButton1.ShadowDecoration.Parent = this.siticoneButton1;
             this.siticoneButton1.Size = new System.Drawing.Size(155, 27);
             this.siticoneButton1.TabIndex = 2;
             this.siticoneButton1.Text = "Popular";
             this.siticoneButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.TooltipManager.SetToolTip(this.siticoneButton1, "Search");
             this.siticoneButton1.Click += new System.EventHandler(this.siticoneButton1_Click);
+            // 
+            // siticoneButton22
+            // 
+            this.siticoneButton22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneButton22.CheckedState.Parent = this.siticoneButton22;
+            this.siticoneButton22.CustomImages.Parent = this.siticoneButton22;
+            this.siticoneButton22.FillColor = System.Drawing.Color.Black;
+            this.siticoneButton22.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneButton22.ForeColor = System.Drawing.Color.Gray;
+            this.siticoneButton22.HoveredState.Parent = this.siticoneButton22;
+            this.siticoneButton22.Location = new System.Drawing.Point(919, 3);
+            this.siticoneButton22.Name = "siticoneButton22";
+            this.siticoneButton22.ShadowDecoration.Parent = this.siticoneButton22;
+            this.siticoneButton22.Size = new System.Drawing.Size(42, 38);
+            this.siticoneButton22.TabIndex = 4;
+            this.siticoneButton22.Text = "";
+            this.TooltipManager.SetToolTip(this.siticoneButton22, "Close");
+            this.siticoneButton22.Click += new System.EventHandler(this.siticoneButton22_Click);
             // 
             // TitlebarPanel
             // 
@@ -625,7 +605,7 @@ namespace Crunchyroll
             this.TitlebarPanel.Controls.Add(this.siticoneControlBox1);
             this.TitlebarPanel.Location = new System.Drawing.Point(0, 0);
             this.TitlebarPanel.Name = "TitlebarPanel";
-            this.TitlebarPanel.Size = new System.Drawing.Size(1161, 30);
+            this.TitlebarPanel.Size = new System.Drawing.Size(1147, 30);
             this.TitlebarPanel.TabIndex = 3;
             this.TitlebarPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MoveForm);
             // 
@@ -684,7 +664,7 @@ namespace Crunchyroll
             this.siticoneControlBox3.HoveredState.FillColor = System.Drawing.Color.Red;
             this.siticoneControlBox3.HoveredState.Parent = this.siticoneControlBox3;
             this.siticoneControlBox3.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox3.Location = new System.Drawing.Point(1024, 0);
+            this.siticoneControlBox3.Location = new System.Drawing.Point(1010, 0);
             this.siticoneControlBox3.Name = "siticoneControlBox3";
             this.siticoneControlBox3.ShadowDecoration.Parent = this.siticoneControlBox3;
             this.siticoneControlBox3.Size = new System.Drawing.Size(45, 29);
@@ -698,7 +678,7 @@ namespace Crunchyroll
             this.siticoneControlBox2.HoveredState.FillColor = System.Drawing.Color.Red;
             this.siticoneControlBox2.HoveredState.Parent = this.siticoneControlBox2;
             this.siticoneControlBox2.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(1070, 0);
+            this.siticoneControlBox2.Location = new System.Drawing.Point(1056, 0);
             this.siticoneControlBox2.Name = "siticoneControlBox2";
             this.siticoneControlBox2.ShadowDecoration.Parent = this.siticoneControlBox2;
             this.siticoneControlBox2.Size = new System.Drawing.Size(45, 29);
@@ -711,7 +691,7 @@ namespace Crunchyroll
             this.siticoneControlBox1.HoveredState.FillColor = System.Drawing.Color.Red;
             this.siticoneControlBox1.HoveredState.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1116, 0);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1102, 0);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.ShadowDecoration.Parent = this.siticoneControlBox1;
             this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -727,7 +707,7 @@ namespace Crunchyroll
             this.FullscreenButton.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FullscreenButton.ForeColor = System.Drawing.Color.White;
             this.FullscreenButton.HoveredState.Parent = this.FullscreenButton;
-            this.FullscreenButton.Location = new System.Drawing.Point(1111, 511);
+            this.FullscreenButton.Location = new System.Drawing.Point(1097, 639);
             this.FullscreenButton.Name = "FullscreenButton";
             this.FullscreenButton.ShadowDecoration.Parent = this.FullscreenButton;
             this.FullscreenButton.Size = new System.Drawing.Size(50, 50);
@@ -748,10 +728,10 @@ namespace Crunchyroll
             this.RightPanel.Controls.Add(this.SearchButton);
             this.RightPanel.Controls.Add(this.ListButton);
             this.RightPanel.CustomBorderColor = System.Drawing.Color.Gray;
-            this.RightPanel.Location = new System.Drawing.Point(1111, 28);
+            this.RightPanel.Location = new System.Drawing.Point(1097, 28);
             this.RightPanel.Name = "RightPanel";
             this.RightPanel.ShadowDecoration.Parent = this.RightPanel;
-            this.RightPanel.Size = new System.Drawing.Size(50, 484);
+            this.RightPanel.Size = new System.Drawing.Size(50, 612);
             this.RightPanel.TabIndex = 1;
             // 
             // siticoneButton21
@@ -764,7 +744,7 @@ namespace Crunchyroll
             this.siticoneButton21.Font = new System.Drawing.Font("Segoe MDL2 Assets", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneButton21.ForeColor = System.Drawing.Color.White;
             this.siticoneButton21.HoveredState.Parent = this.siticoneButton21;
-            this.siticoneButton21.Location = new System.Drawing.Point(3, 431);
+            this.siticoneButton21.Location = new System.Drawing.Point(3, 559);
             this.siticoneButton21.Name = "siticoneButton21";
             this.siticoneButton21.ShadowDecoration.Parent = this.siticoneButton21;
             this.siticoneButton21.Size = new System.Drawing.Size(43, 50);
@@ -839,7 +819,7 @@ namespace Crunchyroll
             this.Electron.DefaultBackgroundColor = System.Drawing.Color.White;
             this.Electron.Location = new System.Drawing.Point(3, 31);
             this.Electron.Name = "Electron";
-            this.Electron.Size = new System.Drawing.Size(1115, 527);
+            this.Electron.Size = new System.Drawing.Size(1101, 655);
             this.Electron.TabIndex = 4;
             this.Electron.ZoomFactor = 1D;
             this.Electron.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Electron_KeyDown);
@@ -856,7 +836,7 @@ namespace Crunchyroll
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
-            this.ClientSize = new System.Drawing.Size(1161, 561);
+            this.ClientSize = new System.Drawing.Size(1147, 689);
             this.Controls.Add(this.siticoneGradientPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
